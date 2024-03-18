@@ -14,9 +14,9 @@ export default function Home({ changeTheme, theme }) {
       <Menu>
         <MenuButton as={Button} bg={'gray'}>{theme}</MenuButton>
         <MenuList>
-          <MenuItem onClick={() => changeTheme("light")}>Light</MenuItem>
-          <MenuItem onClick={() => changeTheme("dark")}>Dark</MenuItem>
-          <MenuItem onClick={() => changeTheme("black")}>Black</MenuItem>
+          <MenuItem color={'black'} onClick={() => changeTheme("light")}>Light</MenuItem>
+          <MenuItem color={'black'} onClick={() => changeTheme("dark")}>Dark</MenuItem>
+          <MenuItem color={'black'} onClick={() => changeTheme("black")}>Black</MenuItem>
         </MenuList>
       </Menu>
       <Text>Test text</Text>
